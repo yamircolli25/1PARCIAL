@@ -1,16 +1,30 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Estilos adicionales de Duolingo
     var estiloAdicional = `
+        
         header {
             background-color: #ffffff;
             color: #ffffff;
             padding: 10px;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            posicion: relative;
         }
+        
 
         body{
+            
             background-color: #ffffff;
-            overflow-y: scroll;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            position: relative;
         }
 
         nav ul {
@@ -46,6 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
             font-size: 30px; /* Ajusta el tamaño del texto */
             color: #575555
         }
+
         ul {
             list-style-type: none;
             padding: 0;
@@ -69,20 +84,21 @@ document.addEventListener('DOMContentLoaded', function () {
             cursor: pointer; /* Cursor de apuntar */
             margin-right: 20px; /* Margen derecho entre botones */
             border: 2px solid #C5CBCD
+            
         }
 
         #bot1{
             position: absolute;
-            top: 330px; /*ajusta distancia desde arriba*/
-            left: 650px; /*ajusta distancia desde izquierda*/
+            top: 330px; /ajusta distancia desde arriba/
+            left: 650px; /ajusta distancia desde izquierda/
             background-color: #6BDC0D; /* Color de fondo del botón */
             color: white; /* Color del texto del botón */
         }
 
         #bot2{
             position: absolute;
-            top: 390px; /*ajusta distancia desde arriba*/
-            left: 650px; /*ajusta distancia desde izquierda*/
+            top: 390px; /ajusta distancia desde arriba/
+            left: 650px; /ajusta distancia desde izquierda/
             background-color: #FFFFFF; /* Color de fondo del botón */
             color: #1DCCF6; /* Color del texto del botón */
             font-size: 10px; /* Ajusta el tamaño del texto */
@@ -92,33 +108,98 @@ document.addEventListener('DOMContentLoaded', function () {
             background-color: #ffffff;
             padding: 20px;
             border-radius: 5px;
+           
         }
 
         #duo_imagen{
             max-width: 100%;
-            heigth: auto;
+            height: auto;
             width: 200px;
             position: absolute;
-            top: 8px; /*ajusta distancia desde arriba*/
-            left: 20px; /*ajusta distancia desde izquierda*/
+            top: 8px; /ajusta distancia desde arriba/
+            left: 20px; /ajusta distancia desde izquierda/
         }
-
 
         img {
             max-width: 100%;
             height: auto;
             margin: 20px 0;
             border-radius: 5px; /* Agrega bordes redondeados alrededor de la imagen */
-            position: absolute;
             top: 150px; /* Ajusta según sea necesario */
             left: 100px; /* Ajusta según sea necesario */
             width: 350px; /* Ajusta según sea necesario */
             height: auto; /* Mantener la proporción original */
+            
         }
 
         #imagen1 {
-            top: 100; /*ajusta distancia desde arriba*/
-            left: 100px; /*ajusta distancia desde izquierda*/
+            top: 100; /ajusta distancia desde arriba/
+            left: 100px; /ajusta distancia desde izquierda/
+            position: absolute;
+        }
+
+        #pa{
+            position: absolute; /* Permite posicionar con respecto al contenedor relativo */
+            top: 180%; /* Ajusta la distancia desde la parte superior */
+            left: 50px; /* Ajusta la distancia desde la izquierda */
+            font-size: 48px; /* Ajusta el tamaño del texto */
+            color: #6BDC0D;
+        }
+
+        #pa3{
+            position: absolute; /* Permite posicionar con respecto al contenedor relativo */
+            top: 280%; /* Ajusta la distancia desde la parte superior */
+            left: 550px; /* Ajusta la distancia desde la izquierda */
+            font-size: 48px; /* Ajusta el tamaño del texto */
+            color: #6BDC0D;
+        }
+
+        #pa2 {
+            position: absolute; /* Permite posicionar con respecto al contenedor relativo */
+            top: 210%; /* Ajusta la distancia desde la parte superior */
+            left: 50px; /* Ajusta la distancia desde la izquierda */
+            font-size: 15px; /* Ajusta el tamaño del texto */
+            color: #A1A7A9;
+        }
+
+        #pa4 {
+            position: absolute; /* Permite posicionar con respecto al contenedor relativo */
+            top: 310%; /* Ajusta la distancia desde la parte superior */
+            left: 550px; /* Ajusta la distancia desde la izquierda */
+            font-size: 15px; /* Ajusta el tamaño del texto */
+            color: #A1A7A9;
+        }
+
+        #pa5{
+            position: absolute; /* Permite posicionar con respecto al contenedor relativo */
+            top: 370%; /* Ajusta la distancia desde la parte superior */
+            left: 50px; /* Ajusta la distancia desde la izquierda */
+            font-size: 48px; /* Ajusta el tamaño del texto */
+            color: #6BDC0D;
+        }
+
+        #pa6 {
+            position: absolute; /* Permite posicionar con respecto al contenedor relativo */
+            top: 400%; /* Ajusta la distancia desde la parte superior */
+            left: 50px; /* Ajusta la distancia desde la izquierda */
+            font-size: 15px; /* Ajusta el tamaño del texto */
+            color: #A1A7A9;
+        }
+
+        #pa7{
+            position: absolute; /* Permite posicionar con respecto al contenedor relativo */
+            top: 470%; /* Ajusta la distancia desde la parte superior */
+            left: 600px; /* Ajusta la distancia desde la izquierda */
+            font-size: 48px; /* Ajusta el tamaño del texto */
+            color: #6BDC0D;
+        }
+
+        #pa8 {
+            position: absolute; /* Permite posicionar con respecto al contenedor relativo */
+            top: 500%; /* Ajusta la distancia desde la parte superior */
+            left: 550px; /* Ajusta la distancia desde la izquierda */
+            font-size: 15px; /* Ajusta el tamaño del texto */
+            color: #A1A7A9;
         }
 
         #palabra-2{
@@ -132,6 +213,8 @@ document.addEventListener('DOMContentLoaded', function () {
         #app {
             min-height: 100vh; /* Ajusta según sea necesario */
         }
+
+        
     `;
 
     // Crear un estilo en una etiqueta style
@@ -145,7 +228,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <header>
             <div>
                 <nav>
-                <img id="duo_imagen" src="duo2.svg" alt="Imagen Desccriptiva">
+                <img id="duo_imagen" src="imagenes/duo2.svg" alt="Imagen Desccriptiva">
                     <p id="palabra-2"> <strong>IDIOMA DE LA PAGINA: ESPAÑOL</strong> </p>
                 
                 </nav>
@@ -158,11 +241,82 @@ document.addEventListener('DOMContentLoaded', function () {
                 </h1>
             </div>
             <div>
-                <img id="imagen1" src="duolingo3.gif" alt="GIF Descriptivo">
+                <img id="imagen1" src="imagenes/duolingo3.gif" alt="GIF Descriptivo">
                 
                 <button id="bot1" onclick="realizarPractica()"> <strong>EMPIEZA AHORA</strong> </button>
                 <button id="bot2" onclick="realizarPractica()"> <strong>YA TENGO UNA CUENTA</strong> </button>
             </div>
+            <div>
+                <h1 id= "pa">
+                    <strong>divertido, efectivo y</strong>
+                    <br>
+                    <strong>gratis</strong>
+                </h1>
+
+                <h3 id= "pa2">
+                Aprender con Duolingo es divertido y los estudios demuestran
+                <br> 
+                que funciona. ¡En nuestras lecciones cortas ganarás puntos y
+                <br> 
+                habilitarás nuevas unidades al mismo tiempo que desarrollas
+                <br>
+                tus habilidades de comunicación en la vida real!
+                </h3>
+                
+            </div>
+            
+            <div>
+                <h1 id= "pa3">
+                    <strong>respaldado por la</strong>
+                    <br>
+                    <strong>ciencia</strong>
+                </h1>
+
+                <h3 id= "pa4">
+                Gracias a la combinación de métodos de enseñanza respaldados                
+                <br>
+                por la ciencia y un contenido entretenido, creamos cursos que  
+                <br>
+                enseñan de forma eficiente a leer, escribir, entender y hablar en
+                <br>
+                otros idiomas.
+                </h3>
+                
+            </div>
+            <div>
+                <h1 id= "pa5">
+                    <strong>mantén tu</strong>
+                    <br>
+                    <strong>motivación</strong>
+                </h1>
+
+                <h3 id= "pa6">
+                Nuestras funcionalidades y desafíos son divertidos y hacen que
+                <br>
+                aprender se sienta como un juego. ¡Vas a poder formar un
+                <br>
+                hábito de aprendizaje sin esfuerzo! Y, por supuesto, recibirás
+                <br>
+                recordatorios de nuestra adorable mascota, Duo, el búho.
+                </h3>
+                
+            </div>
+            <div>
+                <h1 id= "pa7">
+                <strong>aprendizaje</strong>
+                <br>
+                <strong>personalizado</strong>
+                </h1>
+
+                <h3 id= "pa8">
+                Al combinar lo mejor de la inteligencia artificial y las ciencias de
+                <br>
+                idiomas, las lecciones se adaptan según tu desempeño para
+                <br>
+                ayudarte a aprender al nivel adecuado y a tu propio ritmo.
+                </h3>
+            </div>
+
         </body>
 
         
