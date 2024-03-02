@@ -25,6 +25,8 @@ document.addEventListener('DOMContentLoaded', function () {
             height: 100vh;
             margin: 0;
             position: relative;
+            scrollbar-width: thin; /* Puedes usar "auto" o "thin" para especificar el ancho de la barra */
+            scrollbar-color: #888 #f1f1f1;
         }
 
         nav ul {
@@ -89,16 +91,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
         #bot1{
             position: absolute;
-            top: 330px; /ajusta distancia desde arriba/
-            left: 650px; /ajusta distancia desde izquierda/
+            top: 330px; /*ajusta distancia desde arriba*/
+            left: 650px; /*ajusta distancia desde izquierda*/
             background-color: #6BDC0D; /* Color de fondo del botón */
             color: white; /* Color del texto del botón */
         }
 
         #bot2{
             position: absolute;
-            top: 390px; /ajusta distancia desde arriba/
-            left: 650px; /ajusta distancia desde izquierda/
+            top: 390px; /*ajusta distancia desde arriba*/
+            left: 650px; /*ajusta distancia desde izquierda*/
             background-color: #FFFFFF; /* Color de fondo del botón */
             color: #1DCCF6; /* Color del texto del botón */
             font-size: 10px; /* Ajusta el tamaño del texto */
@@ -116,8 +118,8 @@ document.addEventListener('DOMContentLoaded', function () {
             height: auto;
             width: 200px;
             position: absolute;
-            top: 8px; /ajusta distancia desde arriba/
-            left: 20px; /ajusta distancia desde izquierda/
+            top: 8px; /*ajusta distancia desde arriba*/
+            left: 20px; /*ajusta distancia desde izquierda*/
         }
 
         img {
@@ -133,8 +135,32 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         #imagen1 {
-            top: 100; /ajusta distancia desde arriba/
-            left: 100px; /ajusta distancia desde izquierda/
+            top: 100; /*ajusta distancia desde arriba*/
+            left: 100px; /*ajusta distancia desde izquierda*/
+            position: absolute;
+        }
+
+        #imagen2 {
+            top: 165%; /*ajusta distancia desde arriba*/
+            left: 650px; /*ajusta distancia desde izquierda*/
+            position: absolute;
+        }
+
+        #imagen3 {
+            top: 270%; /*ajusta distancia desde arriba*/
+            left: 50px; /*ajusta distancia desde izquierda*/
+            position: absolute;
+        }
+
+        #imagen4 {
+            top: 360%; /*ajusta distancia desde arriba*/
+            left: 650px; /*ajusta distancia desde izquierda*/
+            position: absolute;
+        }
+
+        #imagen5 {
+            top: 450%; /*ajusta distancia desde arriba*/
+            left: 50px; /*ajusta distancia desde izquierda*/
             position: absolute;
         }
 
@@ -202,6 +228,15 @@ document.addEventListener('DOMContentLoaded', function () {
             color: #A1A7A9;
         }
 
+        #pa9 {
+            position: absolute; /* Permite posicionar con respecto al contenedor relativo */
+            top: 600%; /* Ajusta la distancia desde la parte superior */
+            left: 280px; /* Ajusta la distancia desde la izquierda */
+            font-size: 70px; /* Ajusta el tamaño del texto */
+            color: #082365;
+          
+        }
+
         #palabra-2{
             position: absolute; /* Permite posicionar con respecto al contenedor relativo */
             top: 10px; /* Ajusta la distancia desde la parte superior */
@@ -209,6 +244,10 @@ document.addEventListener('DOMContentLoaded', function () {
             font-size: 14px; /* Ajusta el tamaño del texto */
             color: #A9A9A9; /* Ajusta el color del texto */
         }
+
+        .espacio-al-final {
+            height: 50px; /* Ajusta la altura según sea necesario para crear espacio */
+          }
 
         #app {
             min-height: 100vh; /* Ajusta según sea necesario */
@@ -263,9 +302,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 tus habilidades de comunicación en la vida real!
                 </h3>
                 
+                <img id="imagen2" src="imagenes/duo4.gif" alt="GIF Descriptivo">
+
             </div>
             
             <div>
+
+                <img id="imagen3" src="imagenes/duo5.gif" alt="GIF Descriptivo">
+
                 <h1 id= "pa3">
                     <strong>respaldado por la</strong>
                     <br>
@@ -300,8 +344,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 recordatorios de nuestra adorable mascota, Duo, el búho.
                 </h3>
                 
+                <img id="imagen4" src="imagenes/duo7.gif" alt="GIF Descriptivo">
+
             </div>
             <div>
+
+                <img id="imagen5" src="imagenes/duo8.gif" alt="GIF Descriptivo">
+
                 <h1 id= "pa7">
                 <strong>aprendizaje</strong>
                 <br>
@@ -316,7 +365,19 @@ document.addEventListener('DOMContentLoaded', function () {
                 ayudarte a aprender al nivel adecuado y a tu propio ritmo.
                 </h3>
             </div>
+                <h1 id= "pa9">
+                    <strong>aprende cuando</strong>
+                    <br>
+                    <strong>quieras y donde</strong>
+                    <br>
+                    <strong>quieras</strong>
+                </h1>
+            <div>
 
+
+            </div>
+
+            <div class="espacio-al-final"></div>
         </body>
 
         
@@ -328,7 +389,7 @@ document.addEventListener('DOMContentLoaded', function () {
     appDiv.innerHTML = duolingoContenido;
 
     function realizarPractica() {
-        alert('Comienza la práctica...')
+        alert('Comienza la práctica...');
         // Aquí puedes agregar lógica adicional para la práctica
     }
 });
