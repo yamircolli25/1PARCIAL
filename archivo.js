@@ -328,7 +328,7 @@ document.addEventListener('DOMContentLoaded', function () {
     appDiv.innerHTML = duolingoContenido;
 
     function realizarPractica() {
-        alert('Comienza la práctica...');
+        alert('Comienza la práctica...')
         // Aquí puedes agregar lógica adicional para la práctica
     }
 });
