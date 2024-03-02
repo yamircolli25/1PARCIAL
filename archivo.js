@@ -384,12 +384,12 @@ document.addEventListener('DOMContentLoaded', function () {
     `;
 
     window.scrollBy(0, 200);
-    // Aplicar el contenido a la página
+    
     var appDiv = document.getElementById('app');
     appDiv.innerHTML = duolingoContenido;
 
     function realizarPractica() {
         alert('Comienza la práctica...');
-        // Aquí puedes agregar lógica adicional para la práctica
+        
     }
 });
