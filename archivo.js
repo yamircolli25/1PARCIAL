@@ -1,127 +1,150 @@
 document.addEventListener("DOMContentLoaded", function () {
     const estiloCSS = `
-    <style>
+        <style>
         
-    .container{
-        max-width: 1000px;
-         width: 90%;
-        height: 80%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-    }
+            .container{
+                max-width: 1000px;
+                 width: 90%;
+                height: 80%;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+            }
 
-    .container99{
-        max-width: 1000px;
-        width: 90%;
-        height: 80%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 50%;
-    }
+            .container99{
+                max-width: 1000px;
+                width: 90%;
+                height: 80%;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 50%;
+            }
 
-    .cont15{
-        width: 100%;
-        margin-top: -30%;
-        
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .li1 {
-        max-width: 1000px;
-        width: 20%;
-        margin-top: 50%;
-        margin-bottom:10%;
-        float: left;
-        box-sizing: border-box;
-        padding: 10px;
-        text-decoration: none;
-    }
+            .cont15{
+                width: 100%;
+                margin-top: -30%;
+                
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+            }
 
-    .li2 {
-        max-width: 1000px;
-        width: 100%;
-        height:10%;
-        margin-top: 50%;
-        padding:20px;
-        word-spacing: 10px;
-        margin-rottom: 50%;
-    }
+            .li1 {
+                max-width: 1000px;
+                width: 20%;
+                margin-top: 10%;
+                margin-bottom:10%;
+                float: left;
+                box-sizing: border-box;
+                padding: 10px;
+                text-decoration: none;
+                color: #C5C8CE;
+            }
 
-    
+            h3{
+                color: #ffffff;
+            }
+            a {
+                text-decoration: none;
+                color: #C5C8CE;
+            }
 
-    .cont4{
-        max-width: 1000px;
-        width: 100%;
-        height: 80%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-       
-    }
+            footer {
+                background-color: #49CD23;
+                margin-top: 0%; /* Empuja el footer hacia la parte inferior del contenedor */
+            }
 
-    .con67{
-        max-width: 1000px;
-        width: 90%;
-        margin-bottom: -20%;
-        margin-top:10%;
-    }
-    
-    .cont10{
-        max-width: 1000px;
-        width: 100%;
-        height: 80%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-       
-    }
+            .g2{
+                color: #C5C8CE;
+            }
 
-    .cont5{
-        max-width: 1000px;
-        width: 100%;
-        height: 80%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        
-    }
+            .li2 {
+                max-width: 1000px;
+                width: 100%;
+                height:10%;
+                margin-top: 50%;
+                padding:20px;
+                word-spacing: 10px;
+                margin-rottom: 50%;
+                color: #C5C8CE;
+            }
+
+            
+
+            .cont4{
+                max-width: 1000px;
+                width: 100%;
+                height: 0%;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+               
+            }
+
+            .con67{
+                max-width: 1000px;
+                width: 90%;
+                margin-bottom: -20%;
+                margin-top:10%;
+            }
+            
+            .cont10{
+                max-width: 1000px;
+                width: 100%;
+                height: 80%;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+               
+            }
+
+            .cont5{
+                max-width: 1000px;
+                width: 100%;
+                height: 80%;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                
+            }
 
 
-    .mensaje{
-        max-width: 1000px;
-        width: 100%;
-        height: 80%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #ffffff; /* Cambia el color a tu elección */
-    }
+            .mensaje{
+                max-width: 1000px;
+                width: 100%;
+                height: 30%;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #ffffff; /* Cambia el color a tu elección */
+            }
 
-    button {
-        padding: 15px 100px; /* Espaciado interno del botón */
-        border: none; /* Sin borde */
-        border-radius: 10px; /* Esquinas redondeadas */
-        cursor: pointer; /* Cursor de apuntar */
-        margin-right: 20px; /* Margen derecho entre botones */
-        border: 2px solid #C5CBCD
-        
-    }
+            button {
+                padding: 15px 100px; /* Espaciado interno del botón */
+                border: none; /* Sin borde */
+                border-radius: 10px; /* Esquinas redondeadas */
+                cursor: pointer; /* Cursor de apuntar */
+                margin-right: 20px; /* Margen derecho entre botones */
+                border: 2px solid #C5CBCD
+                
+            }
 
-    .bot7 {
-        padding: 15px 15px;
-        margin-top: 10%;
-        margin-left: 25%;
-    }
+            .bot7 {
+                padding: 15px 15px;
+                margin-top: 5%;
+                margin-left: 60%;
+                background-color: #ffffff;
+                color: #091376;
+            }
+
 
             .palabra{
                 position: fixed;
@@ -275,9 +298,9 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             .nuevo-contenedor {
-                width: 50%; /*tamaño del contenedor de ancho de pantalla*/
+                width: 100%; /*tamaño del contenedor de ancho de pantalla*/
                 hight: 100%;/*tamaño alto*/
-                
+                background-color: #091376;
             }
 
             .image2 {
@@ -307,20 +330,18 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             
-
             .boton {
                 margin-left: 10px; /* Espaciado entre los botones y la lista */
               }
             
               #ver-mas img, #ver-inicio img {
-                width: 30px; /* tamaño de las imágenes de los botones */
+                width: 30px; /* Puedes ajustar el tamaño de las imágenes de los botones según tus necesidades */
               }
             
               #ver-mas, #ver-inicio {
                 margin-top: 0px; /* Espaciado entre la lista y los botones */
                 
               }
-
             .image4{
                 width: 100%;
                 max-width: 400px;
@@ -328,6 +349,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 margin-right:auto;
                 margin-top: -300px;
             }
+
 
             .image5 {
                 width: 100%;
@@ -337,8 +359,15 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             .image8 {
+                width: 40%;
+                margin-top:20%;
+                margin-right: 10%;
+                margin-bottom:10%;
+            }
+            
+            .m2 {
                 width: 100%;
-                max-width: 400px;
+                margin-top: -1100px;
             }
 
             .image9 {
@@ -350,31 +379,30 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             .image12{
-                width: 90%;
-                margin-right: 20%;
+                width: 40%;
+                margin-left: 50%;
                 margin-top: -100%;
-        }
-        
-        ._1v6Jc {
-            margin-right: 10px;
-        }
+            }
 
-        .w9lql {
-            font-size: 15px;
-            font-weight: 700;
-            letter-spacing: .8px;
-            text-transform: uppercase;
-            white-space: nowrap;
-        }
+            ._1v6Jc {
+                margin-right: 10px;
+            }
 
-        .TNj94 {
-            align-items: center;
-            color: var(--language-carousel-color, rgb(var(--color-snow-always-light)));
-            display: flex;
-            justify-content: center;
-            text-decoration: none;
-        }
+            .w9lql {
+                font-size: 15px;
+                font-weight: 700;
+                letter-spacing: .8px;
+                text-transform: uppercase;
+                white-space: nowrap;
+            }
 
+            .TNj94 {
+                align-items: center;
+                color: var(--language-carousel-color, rgb(var(--color-snow-always-light)));
+                display: flex;
+                justify-content: center;
+                text-decoration: none;
+            }
 
             .button-container {
                 width: 100%;
@@ -393,6 +421,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 margin-top: 20px; /* Ajusta el margen superior según sea necesario */
                 margin-left: 23%;
             }
+
             .kuc9r {
                 overflow: hidden;
             }
@@ -415,19 +444,20 @@ document.addEventListener("DOMContentLoaded", function () {
             .botB {
                 background-color: #ffffff;
                 width: 35%;
-                margin-left: 52%;
+                margin-left: 50%;
                 color: #44C5F5;     
             }
 
             .button-container button {
-                margin-top: 10px; /* margen superior de cada botón */
+                margin-top: 10px; /* Ajusta el margen superior de cada botón según sea necesario */
             }
 
             .button-container1 button {
-                margin-top: 10px; /* margen superior de cada botón */
+                margin-top: 10px; /* Ajusta el margen superior de cada botón según sea necesario */
                 padding: 10px 30px;
                 margin-bottom: 100%;
             }
+
             .tecla1{
                 cursor: pointer;
                 width:10%;
@@ -442,6 +472,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 width: 30%;
                 margin-left: 35%;
                 padding: 20px 10px;
+                margin-bottom: -30%;
             }
 
             .mensaje2 {
@@ -449,14 +480,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 text-align: center;
                 margin-top:30%;
                 font-size: 60px;
+                color: #26DF1D;
             }
-            ._1fESl {
-                color: var(--language-carousel-caret-color, rgb(var(--color-snow-always-light)));
-                cursor: pointer;
-                height: var(--language-carousel-caret-size, 22px);
-                opacity: var(--language-carousel-caret-opacity, .5);
-                width: var(--language-carousel-caret-size, 22px);
-            }
+
+            
 
             .t1{
                 color: #ffffff;
@@ -475,12 +502,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 display: inline-block;
                 align-items: center;
                 justify-content: center;
-                margin-right: 10px; 
+                margin-right: 10px; /* Puedes ajustar este valor según tus necesidades */
                 margin-bottom: 5px; /* Espaciado vertical entre filas de elementos */
             }
             
               li img {
-                width: 30px; /* tamaño de la imagen del país */
+                width: 30px; /* Puedes ajustar el tamaño de la imagen del país según tus necesidades */
                 margin-right: 5px; /* Espaciado entre la imagen y el texto */
               }
             
@@ -502,15 +529,16 @@ document.addEventListener("DOMContentLoaded", function () {
              .bot1{
                 background-color: #26DF1D;
             }
+
+            .bot11{
+                background-color: #26DF1D;
+            }
             
             .bot2{
                 background-color: #ffffff;
             }
 
-            .bot7{
-                background-color: #ffffff;
-                color: #091376;
-            }
+           
             .t2{
                 color: #44C5F5;                
             }
@@ -561,6 +589,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 .tit2{
                     width: 45%: /*ancho*
+                                        
                 }
 
                 .image2{
@@ -620,7 +649,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 
                 .image12{
-                    width: 45%;
+                    width: 25%;
                 }
 
                 .bot7{
@@ -630,7 +659,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         </style>
     `;
-
     document.head.insertAdjacentHTML("beforeend", estiloCSS);
 
     const contenidoHTML = `
@@ -668,37 +696,37 @@ document.addEventListener("DOMContentLoaded", function () {
                 </li>
                 <li>
                     <a href="enlace_peru.html">
-                        <img src="imagenes/b2.jpg" alt="Perú"><span>FRANCES</span>
+                        <img src="imagenes/b3.jpg" alt="IMAGEN DESCRIPTIVA"><span>FRANCES</span>
                     </a>
                 </li>
                 <li>
                     <a href="enlace_peru.html">
-                    <img src="imagenes/b2.jpg" alt="Perú">
+                    <img src="imagenes/b4.jpg"alt="IMAGEN DESCRIPTIVA">
                     <span>ALEMAN</span>
                     </a>
                 </li>
                 <li>
                     <a href="enlace_peru.html">
-                    <img src="imagenes/b2.jpg" alt="Perú">
+                    <img src="imagenes/b5.jpg" alt="IMAGEN DESCRIPTIVA">
                     <span>ITALIANO</span>
                     </a>
                 </li>
                 <li>
                     <a href="enlace_peru.html">
-                    <img src="imagenes/b2.jpg" alt="Perú">
+                    <img src="imagenes/b6.jpg" alt="IMAGEN DESCRIPTIVA">
                     <span>PORTUGUES</span>
                     </a>
                 </li>
                 <li>
                     <a href="enlace_peru.html">
-                    <img src="imagenes/b2.jpg" alt="Perú">
+                    <img src="imagenes/b7.jpg" alt="IMAGEN DESCRIPTIVA">
                     <span>CATALAN</span>
                     </a>
                 </li>
                 <li>
                     <a href="enlace_peru.html">
-                    <img src="imagenes/b2.jpg" alt="Perú">
-                    <span>CATALAN</span>
+                    <img src="imagenes/b8.jpg" alt="IMAGEN DESCRIPTIVA">
+                    <span>RUSO</span>
                     </a>
                 </li>
                 <li>
@@ -770,14 +798,16 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
             
         </div>
-        <section class="nuevo-contenedor">
+        <div class="m2">
+           <img src="imagenes/imagen2.svg" >     
+        </div>
+        <div class="nuevo-contenedor">
            <img class="image8" src="imagenes/duo9.svg" alt="Imagen Descriptiva">       
-           </section>
- 
-        <section class="nuevo-contenedor">
+           <div >
            <img class="image12" src="imagenes/duo12.svg" alt="Imagen Descriptiva">     
            <button class="bot7"> <strong>PRUEBA 2 SEMANAS GRATIS</strong> </button>
-        </section>
+            </div>
+        </div>
 
         <div class="container">
             <div class="tit2">
@@ -825,7 +855,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 gratis!
             </div>
             <div class="button-container3">
-                <button class="bot1"> <strong>CONOCE DUOLINGO ABC</strong> </button>
+                <button class="botA"> <strong>CONOCE DUOLINGO ABC</strong> </button>
             </div>
             <img class="image15" src="imagenes/duo22.png" alt="Imagen Descriptiva">     
         </div>
@@ -842,7 +872,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 mejorar su destreza matemática.
             </div>     
             
-            <button class="bot10"> <strong>MEJORA EN MATEMATICA</strong> </button>
+            <button class="botB"> <strong>MEJORA EN MATEMATICA</strong> </button>
             
         </div>
         <div class="cont4">
@@ -850,10 +880,13 @@ document.addEventListener("DOMContentLoaded", function () {
             aprende idiomas <br>
             con duolingo
             </h1>
-            <button class="bot11"> <strong>EMPIEZA AHORA</strong> </button>
+            <button class="bot11" > <strong class="t1">EMPIEZA AHORA</strong> </button>
         </div>
-        <div >
-
+        <div>
+        </div>
+        
+        <img src="imagenes/imagen1.svg">
+        
         <footer>
             <div class="g1">
                 <div class="li1">
