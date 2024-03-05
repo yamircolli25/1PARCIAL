@@ -1,117 +1,146 @@
 document.addEventListener("DOMContentLoaded", function () {
     const estiloCSS = `
-        <style>
+    <style>
         
-            .container{
-                max-width: 1000px;
-                width: 90%;
-                height: 80%;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: space-between;
-          
-            }
+    .container{
+        max-width: 1000px;
+         width: 90%;
+        height: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-            .cont15{
-                width: 100%;
-                margin-top: -30%;
-                
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: space-between;
-            }
-            .li1 {
-                max-width: 1000px;
-                width: 20%;
-                margin-top: 50%;
-                margin-bottom:10%;
-                float: left;
-                box-sizing: border-box;
-                padding: 10px;
-            }
+    .container99{
+        max-width: 1000px;
+        width: 90%;
+        height: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 50%;
+    }
 
-            .li2 {
-                max-width: 1000px;
-                width: 100%;
-                height:10%;
-                margin-top: 50%;
-                padding:20px;
-                word-spacing: 10px;
-                margin-rottom: 50%;
-            }
+    .cont15{
+        width: 100%;
+        margin-top: -30%;
+        
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .li1 {
+        max-width: 1000px;
+        width: 20%;
+        margin-top: 50%;
+        margin-bottom:10%;
+        float: left;
+        box-sizing: border-box;
+        padding: 10px;
+        text-decoration: none;
+    }
 
-            .cont4{
-                max-width: 1000px;
-                width: 100%;
-                height: 80%;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: space-between;
-               
-            }
+    .li2 {
+        max-width: 1000px;
+        width: 100%;
+        height:10%;
+        margin-top: 50%;
+        padding:20px;
+        word-spacing: 10px;
+        margin-rottom: 50%;
+    }
 
-            .cont10{
-                max-width: 1000px;
-                width: 100%;
-                height: 80%;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: space-between;
-               
-            }
+    
 
-            .cont5{
-                max-width: 1000px;
-                width: 100%;
-                height: 80%;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: space-between;
-                
-            }
+    .cont4{
+        max-width: 1000px;
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+       
+    }
+
+    .con67{
+        max-width: 1000px;
+        width: 90%;
+        margin-bottom: -20%;
+        margin-top:10%;
+    }
+    
+    .cont10{
+        max-width: 1000px;
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+       
+    }
+
+    .cont5{
+        max-width: 1000px;
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
 
 
-            .mensaje{
-                max-width: 1000px;
-                width: 100%;
-                height: 80%;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: space-between;
-                background-color: #ffffff; /* Cambia el color a tu elección */
-            }
+    .mensaje{
+        max-width: 1000px;
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ffffff; /* Cambia el color a tu elección */
+    }
 
-            button {
-                padding: 15px 100px; /* Espaciado interno del botón */
-                border: none; /* Sin borde */
-                border-radius: 10px; /* Esquinas redondeadas */
-                cursor: pointer; /* Cursor de apuntar */
-                margin-right: 20px; /* Margen derecho entre botones */
-                border: 2px solid #C5CBCD
-                
-            }
+    button {
+        padding: 15px 100px; /* Espaciado interno del botón */
+        border: none; /* Sin borde */
+        border-radius: 10px; /* Esquinas redondeadas */
+        cursor: pointer; /* Cursor de apuntar */
+        margin-right: 20px; /* Margen derecho entre botones */
+        border: 2px solid #C5CBCD
+        
+    }
 
-            .bot7 {
-                padding: 15px 15px;
-                margin-top: 10%;
-                margin-left: 25%;
-            }
+    .bot7 {
+        padding: 15px 15px;
+        margin-top: 10%;
+        margin-left: 25%;
+    }
 
             .palabra{
+                position: fixed;
+                top:0;
+                widt:100%;
+                background-color: #ffffff;/*color de fondo de la barra*/
+                z-index:1000;
+                padding:10px;
+                box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+                transition: box-shadow 0.3s ease;
                 max-width: 1000px;
                 width: 100%;
-                height: 30%;
+                height: 10%;
                 display: flex;
                 flex-wrap: wrap;
                 align-items: center;
                 justify-content: space-between;
             }
+
 
             .text {
                 width: 100%;
@@ -137,38 +166,42 @@ document.addEventListener("DOMContentLoaded", function () {
                 text-align: left;
                 font-size: 30px;
                 margin-top: 50%;/*margen superior*/
+                color: #26DF1D;
             }
 
             .tit3 {
                 width: 100%;
                 text-align: left;
-                margin-left: 55%;
+                margin-left: 52%;
                 font-size: 30px;
                 margin-top:-30%;
+                color: #26DF1D;
             }
 
             .tit4 {
                 width: 100%;
                 text-align: left;
                 font-size: 30px;
-                margin-top: 50%
+                margin-top: 200px;
+                color: #26DF1D;
             }
 
             .tit5 {
                 width: 100%;
                 text-align: left;
-                margin-left: 55%;
+                margin-left: 48%;
                 font-size: 30px;
                 margin-top:-30%;
+                color: #26DF1D;
             }
 
 
             .text2{
                 width: 100%;
                 text-align: left;
-                font-size: 15px;
+                font-size: 17px;
                 margin-right: auto;
-                color: #C5C8CE;
+                color: #AAB7BC;
             }
 
             .text3{
@@ -177,24 +210,28 @@ document.addEventListener("DOMContentLoaded", function () {
                 font-size: 15px;
                 margin-left: 55%;
                 margin-top:-10%;
-                color: #C5C8CE;
+                color: #AAB7BC;
             }
 
             .text4{
                 width: 100%;
                 text-align: left;
-                font-size: 15px;
+                font-size: 17px;
                 margin-right: auto;
-                color: #C5C8CE;
+                color: #AAB7BC;
             }
 
             .text5{
                 width: 100%;
                 text-align: left;
-                font-size: 15px;
-                margin-left: 55%;
+                font-size: 17px;
+                margin-left: 48%;
                 margin-top:-10%;
-                color: #C5C8CE;
+                color: #AAB7BC;
+            }
+            ._1NFpv {
+                display: flex;
+                list-style:none;
             }
 
             .text6{
@@ -202,8 +239,21 @@ document.addEventListener("DOMContentLoaded", function () {
                 text-align: center;
                 font-size: 60px;
                 margin-top: 50%;
-                margin-left: 7%;
-                margin-right: -55%;
+                margin-left: 10%;
+                margin-right: -20%;
+                color:#091376;
+            }
+            .w9lql {
+                font-size: 15px;
+                font-weight: 700;
+                letter-spacing: .8px;
+                text-transform: uppercase;
+                white-space: nowrap;
+            }
+            span {
+                text-decoration: none;
+                letter-spacing: 0.8px;
+
             }
 
             .image {
@@ -251,6 +301,25 @@ document.addEventListener("DOMContentLoaded", function () {
                 margin-right: auto; /*margen derecho*/
                 margin-top:140px;
             }
+            .ban {
+                width: 100%;
+                max-width: 50px;
+            }
+
+            
+
+            .boton {
+                margin-left: 10px; /* Espaciado entre los botones y la lista */
+              }
+            
+              #ver-mas img, #ver-inicio img {
+                width: 30px; /* tamaño de las imágenes de los botones */
+              }
+            
+              #ver-mas, #ver-inicio {
+                margin-top: 0px; /* Espaciado entre la lista y los botones */
+                
+              }
 
             .image4{
                 width: 100%;
@@ -284,7 +353,28 @@ document.addEventListener("DOMContentLoaded", function () {
                 width: 90%;
                 margin-right: 20%;
                 margin-top: -100%;
-            }
+        }
+        
+        ._1v6Jc {
+            margin-right: 10px;
+        }
+
+        .w9lql {
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: .8px;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .TNj94 {
+            align-items: center;
+            color: var(--language-carousel-color, rgb(var(--color-snow-always-light)));
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+        }
+
 
             .button-container {
                 width: 100%;
@@ -301,7 +391,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 justify-content: center; /* Centra los botones horizontalmente */
                 align-items: flex-start; /* Alinea los botones en la parte superior del contenedor */
                 margin-top: 20px; /* Ajusta el margen superior según sea necesario */
-                margin-left: 15%;
+                margin-left: 23%;
+            }
+            .kuc9r {
+                overflow: hidden;
             }
 
             .button-container3 {
@@ -313,14 +406,31 @@ document.addEventListener("DOMContentLoaded", function () {
                 margin-top:5%;
             }
 
+            .botA {
+                background-color: #ffffff;
+                width: 35%;
+                color: #44C5F5;     
+            }
+
+            .botB {
+                background-color: #ffffff;
+                width: 35%;
+                margin-left: 52%;
+                color: #44C5F5;     
+            }
+
             .button-container button {
-                margin-top: 10px; /* Ajusta el margen superior de cada botón según sea necesario */
+                margin-top: 10px; /* margen superior de cada botón */
             }
 
             .button-container1 button {
-                margin-top: 10px; /* Ajusta el margen superior de cada botón según sea necesario */
-                padding: 20px 40px;
+                margin-top: 10px; /* margen superior de cada botón */
+                padding: 10px 30px;
                 margin-bottom: 100%;
+            }
+            .tecla1{
+                cursor: pointer;
+                width:10%;
             }
 
             .bot10{
@@ -340,6 +450,87 @@ document.addEventListener("DOMContentLoaded", function () {
                 margin-top:30%;
                 font-size: 60px;
             }
+            ._1fESl {
+                color: var(--language-carousel-caret-color, rgb(var(--color-snow-always-light)));
+                cursor: pointer;
+                height: var(--language-carousel-caret-size, 22px);
+                opacity: var(--language-carousel-caret-opacity, .5);
+                width: var(--language-carousel-caret-size, 22px);
+            }
+
+            .t1{
+                color: #ffffff;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
+                margin-right: 5px;
+            }
+            
+              li {
+                
+                display: inline-block;
+                align-items: center;
+                justify-content: center;
+                margin-right: 10px; 
+                margin-bottom: 5px; /* Espaciado vertical entre filas de elementos */
+            }
+            
+              li img {
+                width: 30px; /* tamaño de la imagen del país */
+                margin-right: 5px; /* Espaciado entre la imagen y el texto */
+              }
+            
+              li span {
+                margin-right: 5px; /* Espaciado entre la imagen y el texto */
+                align-items: center;
+                justify-content: center;
+              }
+            
+              li a {
+                text-decoration: none;
+                color: #000;
+                font-size: 13px;
+                align-items: center; /* Centra verticalmente el contenido del <a> */
+                display: flex;
+              }
+            
+              
+             .bot1{
+                background-color: #26DF1D;
+            }
+            
+            .bot2{
+                background-color: #ffffff;
+            }
+
+            .bot7{
+                background-color: #ffffff;
+                color: #091376;
+            }
+            .t2{
+                color: #44C5F5;                
+            }
+
+              .boton {
+                margin-right: 5px; /* Espaciado entre los botones y la lista */
+              }
+            
+              #ver-mas img, #ver-inicio img {
+                width: 20px; /* Puedes ajustar el tamaño de las imágenes de los botones según tus necesidades */
+              }
+            
+
+              #ver-mas, #ver-inicio {
+                margin-top: 5px; /* Espaciado entre la lista y los botones */
+              }
+
+              .i1{
+                width:30px;
+              }
 
             @media (min-width: 600px) {
                 
@@ -450,16 +641,75 @@ document.addEventListener("DOMContentLoaded", function () {
                 <h2><strong>IDIOMA DE LA PAGINA: ESPAÑOL</strong></h2>
             </div>
         </div>
-        <div class="container">
+        <div class="container99">
             <img class="image" src="imagenes/duolingo3.gif" alt="GIF Descriptivo">
             <div class="text">
                 <h2>!La forma divertida, efectiva y<br> 
                 gratis de aprender un idioma!</h2>
             </div>
             <div class="button-container">
-                <button class="bot1"> <strong>EMPIEZA AHORA</strong> </button>
-                <button class="bot2"> <strong>OTRO BOTÓN</strong> </button>
+                <button class="bot1"> <strong class="t1">EMPIEZA AHORA</strong> </button>
+                <button class="bot2"> <strong class="t2">YA TENGO UNA CUENTA</strong> </button>
             </div>
+        </div>
+        
+
+            <div class="con67">
+                <li>
+                <!-- Botón al inicio -->
+                <a href="https://es.duolingo.com/courses" target="_blank" id="ver-inicio" class="boton">
+                <img src="imagenes/a1.png" alt="IMAGEN DESCRIPTIVA">
+                </a>
+                </li>
+                <li>
+                    <a href="/course/en/es/Aprender-ingl%C3%A9s" target="_blank">
+                    <img src="imagenes/b2.jpg" alt="IMAGEN DESCRIPTIVA">INGLES
+                    </a>
+                </li>
+                <li>
+                    <a href="enlace_peru.html">
+                        <img src="imagenes/b2.jpg" alt="Perú"><span>FRANCES</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="enlace_peru.html">
+                    <img src="imagenes/b2.jpg" alt="Perú">
+                    <span>ALEMAN</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="enlace_peru.html">
+                    <img src="imagenes/b2.jpg" alt="Perú">
+                    <span>ITALIANO</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="enlace_peru.html">
+                    <img src="imagenes/b2.jpg" alt="Perú">
+                    <span>PORTUGUES</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="enlace_peru.html">
+                    <img src="imagenes/b2.jpg" alt="Perú">
+                    <span>CATALAN</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="enlace_peru.html">
+                    <img src="imagenes/b2.jpg" alt="Perú">
+                    <span>CATALAN</span>
+                    </a>
+                </li>
+                <li>
+                <!-- Botón "Ver más" como imagen -->
+                <a href="#" id="ver-mas" class="boton" >
+                    <img src="imagenes/a2.png" alt="Ver más países">
+                </a>
+                </li>
+         
+        </div>  
+        <div class="container">
             <div class="tit2">
                 <h2>divertido, efectivo y <br> gratis</h2>
             </div>
@@ -470,26 +720,29 @@ document.addEventListener("DOMContentLoaded", function () {
              tus habilidades de comunicación en la vida real!
             </div>
             <img class="image2" src="imagenes/duo4.gif" alt="GIF Descriptivo">
+          
             <div class="cont4">
                 <img class="image3" src="imagenes/duo5.gif" alt="GIF Descriptivo">
                 <div class="tit3">
                     <h2>respaldado por la <br> ciencia</h2>
                 </div>
                 <div class="text3">
-                    Gracias a la combinación de métodos de enseñanza respaldados <br>
-                    por la ciencia y un contenido entretenido, creamos cursos que <br>
-                    enseñan de forma eficiente a leer, escribir, entender y hablar en <br>
-                    otros idiomas.
+                    Gracias a la combinación de métodos de enseñanza <br>
+                    respaldados por la ciencia y un contenido entretenido,<br> 
+                    creamos cursos que enseñan de forma eficiente a leer, <br>
+                    escribir, entender y hablar en otros idiomas.
                 </div>
-             <div>
+            <div>
             <div class="tit4">
                 <h2>mantén tu <br>motivación</h2>
             </div>
+            
             <div class="text4">
-             Aprender con Duolingo es divertido y los estudios demuestran<br>
-             que funciona. ¡En nuestras lecciones cortas ganarás puntos y <br>
-             habilitarás nuevas unidades al mismo tiempo que desarrollas <br>
-             tus habilidades de comunicación en la vida real!
+            Nuestras funcionalidades y desafíos son divertidos y hacen <br>
+            que aprender se sienta como un juego. ¡Vas a poder formar <br>
+            un hábito de aprendizaje sin esfuerzo! Y, por supuesto, <br>
+            recibirás recordatorios de nuestra adorable mascota, Duo, el <br>
+            búho.
             </div>
             <img class="image4" src="imagenes/duo7.gif" alt="GIF Descriptivo">
             <div class="cont5">
@@ -498,9 +751,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     <h2>aprendizaje <br>personalizado</h2>
                 </div>
                 <div class="text5">
-                Al combinar lo mejor de la inteligencia artificial y las ciencias de <br>
-                idiomas, las lecciones se adaptan según tu desempeño para <br>
-                ayudarte a aprender al nivel adecuado y a tu propio ritmo.
+                Al combinar lo mejor de la inteligencia artificial y las ciencias<br>
+                de idiomas, las lecciones se adaptan según tu desempeño <br>
+                para ayudarte a aprender al nivel adecuado y a tu propio <br>
+                ritmo.
                 </div>
             <div>
             <div class="mensaje">
@@ -510,8 +764,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 quieras
                 </h1>
                 <div class="button-container1">
-                <button class="bot3"> <strong>EMPIEZA AHORA</strong> </button>
-                <button class="bot4"> <strong>OTRO BOTÓN</strong> </button>
+                <button class="bot3"> <strong>Descargalo en la <br>App Store</strong> </button>
+                <button class="bot4"> <strong>Disponible en <br>Google Play</strong> </button>
                 </div>
             </div>
             
@@ -538,7 +792,7 @@ document.addEventListener("DOMContentLoaded", function () {
             examen y que puedan dar lo mejor de sí.
             </div>
             <div class="button-container3">
-                <button class="bot1"> <strong>CERTIFICA TU INGLES</strong> </button>
+                <button class="botA"> <strong>CERTIFICA TU INGLES</strong> </button>
             </div>
             <img class="image2" src="imagenes/duo20.png" alt="Imagen Descriptiva">     
         </div>
@@ -555,7 +809,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 fuera del salón de clases.
             </div>     
             
-                <button class="bot10"> <strong>POTENCIA TU SALON DE CLASES</strong> </button>
+                <button class="botB"> <strong>POTENCIA TU SALON DE CLASES</strong> </button>
             
         </div>
         
@@ -599,7 +853,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <button class="bot11"> <strong>EMPIEZA AHORA</strong> </button>
         </div>
         <div >
-        </div>
+
         <footer>
             <div class="g1">
                 <div class="li1">
@@ -688,4 +942,6 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
 
     document.body.innerHTML = contenidoHTML;
+
+
 });
