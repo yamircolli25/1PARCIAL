@@ -335,7 +335,7 @@ document.addEventListener("DOMContentLoaded", function () {
               }
             
               #ver-mas img, #ver-inicio img {
-                width: 30px; /* Puedes ajustar el tamaño de las imágenes de los botones según tus necesidades */
+                width: 30px; /*tamaño de las imágenes de los botones */
               }
             
               #ver-mas, #ver-inicio {
@@ -409,7 +409,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 display: flex;
                 flex-direction: column; /* Cambia la dirección del flex a columna */
                 align-items: flex-end; /* Alinea los botones a la derecha del contenedor */
-                margin-top: -250px; /* Ajusta el margen superior según sea necesario */
+                margin-top: -250px; /* Ajusta el margen superior*/
                 margin-right: 40px;
             }
         
@@ -449,11 +449,11 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             .button-container button {
-                margin-top: 10px; /* Ajusta el margen superior de cada botón según sea necesario */
+                margin-top: 10px; /* Ajusta el margen superior de cada botón */
             }
 
             .button-container1 button {
-                margin-top: 10px; /* Ajusta el margen superior de cada botón según sea necesario */
+                margin-top: 10px; /* Ajusta el margen superior de cada botón */
                 padding: 10px 30px;
                 margin-bottom: 100%;
             }
@@ -502,12 +502,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 display: inline-block;
                 align-items: center;
                 justify-content: center;
-                margin-right: 10px; /* Puedes ajustar este valor según tus necesidades */
+                margin-right: 10px; /*ajusta este valor*/
                 margin-bottom: 5px; /* Espaciado vertical entre filas de elementos */
             }
             
               li img {
-                width: 30px; /* Puedes ajustar el tamaño de la imagen del país según tus necesidades */
+                width: 30px; /*tamaño de la imagen del país*/
                 margin-right: 5px; /* Espaciado entre la imagen y el texto */
               }
             
@@ -548,7 +548,7 @@ document.addEventListener("DOMContentLoaded", function () {
               }
             
               #ver-mas img, #ver-inicio img {
-                width: 20px; /* Puedes ajustar el tamaño de las imágenes de los botones según tus necesidades */
+                width: 20px; /* tamaño de las imágenes de los botones  */
               }
             
 
